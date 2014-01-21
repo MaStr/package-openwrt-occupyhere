@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=occupyhere
 PKG_VERSION:=1.0.0
-PKG_RELEASE:=2
+PKG_RELEASE:=3
 
 
 
@@ -14,7 +14,7 @@ define Package/occupyhere
   TITLE:=occupyhere
   SUBMENU:=PirateBox
 #  URL:=TODO
-  DEPENDS:=+lighttpd +lighttpd-mod-cgi +lighttpd-mod-redirect +lighttpd-mod-alias +lighttpd-mod-setenv +lighttpd-mod-fastcgi +php5-cgi +zoneinfo-core +zoneinfo-simple +php5-mod-json  +php5-mod-sqlite3 +php5-mod-pdo-sqlite +php5-mod-sqlite +php5-mod-gettext +php5-mod-openssl  +php5-mod-pdo +zip +unzip +jpeg-tools +gnupg +rng-tools +sqlite3-cli +php5  +php5-cli +lighttpd-mod-rewrite +php5-mod-session 
+  DEPENDS:=+lighttpd +lighttpd-mod-cgi +lighttpd-mod-redirect +lighttpd-mod-alias +lighttpd-mod-setenv +lighttpd-mod-fastcgi +php5-cgi +zoneinfo-core +zoneinfo-simple +php5-mod-json  +php5-mod-sqlite3 +php5-mod-pdo-sqlite +php5-mod-sqlite +php5-mod-gettext +php5-mod-openssl  +php5-mod-pdo +zip +unzip +jpeg-tools +gnupg +rng-tools +sqlite3-cli +php5  +php5-cli +lighttpd-mod-rewrite +php5-mod-session  +ip +radvd
   PKGARCH:=all
   MAINTAINER:=Matthias Strubel <matthias.strubel@aod-rpg.de>
 endef
